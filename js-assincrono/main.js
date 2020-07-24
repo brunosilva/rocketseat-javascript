@@ -101,6 +101,11 @@
     }
 
     // function que add um li com infor que esta carregando enquanto a Promise não retorna!
+    /*
+    Exercicio 03
+    A partir do resultado do exemplo anterior adicione um indicador de carregamento em tela no lugar
+    da lista apenas enquanto a requisição estiver acontecendo:
+    */
     function carregando(){
         listElement.innerHTML = '';
         var repoElement = document.createElement('li');
@@ -109,7 +114,7 @@
         repoElement.appendChild(repoText);
         listElement.appendChild(repoElement);
     }
-    
+
     function buscarGithub() {
         var user = document.querySelector('input[name=user]').value;
         //console.log('chegou na function');
